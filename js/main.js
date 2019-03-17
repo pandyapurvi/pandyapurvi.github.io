@@ -27,21 +27,22 @@ cardImage: 'images/king-of-diamonds.png'
 
 //the clicked cards will come in this empty array
 var cardsInPlay = [];
-
+var myScore;
 
 var checkForMatch = function(){
-	var score = 0;
+	
 	if (cardsInPlay[0]===cardsInPlay[1]){
 		alert('Yo! You found a match');
-		score = score+5;
+		myScore = 2;
+		//document.getElementById("MyDiv").innerHTML=myScore;
 	} else{
 		alert('sorry! try again');
-		score = score-2;
+		myScore = 0;
+		//document.getElementById("MyDiv").innerHTML=myScore
 	}
 	//console.log(score);
-	//document.getElementById("scoreValue").value = score;
+	document.getElementById("MyDiv").innerHTML=myScore;
 };
-
 
 
 var flipCard = function(){
@@ -95,15 +96,15 @@ function shuffle(arra1) {
     }
     return arra1;
 }
-cards = shuffle(cards);
+shuffle(cards);
 createBoard();
 
 
 
 //reload the page when click on the reset button
 
-function reloadFunction(){
+//function reloadFunction(){
 	//location.reload();
-	document.getElementById("game-board").reset();
-};
+	//document.getElementById("game-board").reset();
+//};
 

@@ -1,6 +1,7 @@
 body {
 	text-align: center;
 	margin: 0;
+	background-color: #FFA500;
 }
 
 a {
@@ -26,7 +27,7 @@ a {
 	letter-spacing: 1px;
 	font-weight: 600;
 	font-size: 18px;
-	color: #ffffff;
+	color: #fff;
 	border-bottom: 2px solid transparent;
 }
 a:hover {
@@ -41,6 +42,7 @@ h2{
 	font-weight: 600;
 	font-size: 20px;
 }
+
 
 p {
 	font-family: "Droid Serif";
@@ -100,10 +102,21 @@ footer{
 
 button {
 	font-size: 20px;
-	padding: 10px;
-	font-weight: 400;
+	padding: 10px 20px;
+	font-weight: 600;
+	background-color: #fffdd0;
+	border: 2px solid #FFA500;
+	border-radius: 10%
 }
-
+#MyDiv{
+	background-color: #fffdd0;
+	padding:10px;
+	margin: auto 45%;
+	font-size: 20px;
+	font-weight: bold;
+	border: 2px solid #FFA500;
+	border-radius: 10%
+}
 
 
 
